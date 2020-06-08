@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vong lap</title>
+</head>
+<body>
+<input type="number" id="inputNum" oninput="forTest()">
+<button id="result" onclick="forTest()">Check</button>
+<br>
+<span id="display"></span>
+<script>
+    function forTest() {
+        let a = document.getElementById('inputNum').value;
+
+        if (a<1){
+            document.getElementById('display').innerText = 'Khong nhap so nho hon 1';
+
+        }
+            for (let i =1; i<= a; i++){
+               document.getElementById('display').innerHTML +=  i;
+            }
+
+    }
+</script>
+</body>
+</html>
